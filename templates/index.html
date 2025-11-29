@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shibin | Developer & Robotics Engineer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/logo.png ')}}" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="" height="30px" srcset="">
+        <!-- <span class="logo-mark">&lt;/&gt;</span> -->
+        <span class="logo-text">Shibin</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+<!-- 
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        🌓
+      </button> -->
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main id="home" class="hero-section section anim-section">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Developer • Robotics Engineer • System Designer</p>
+        <h1>Hi, I'm <span class="accent">Shibin</span>.</h1>
+        <p class="hero-subtitle">
+          I design and build solutions that bridge <strong>software</strong> and <strong>hardware</strong> — 
+          from full-stack apps to autonomous robots and custom-built systems.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>Python Expert</span>
+          <span>Robotics Specialist</span>
+          <span>PC Builder</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-wrapper float-anim">
+          <div class="profile-circle"></div>
+          <img src="{{ url_for('static', filename='assets/profile.png') }}"
+               alt="Profile of Shibin"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="hero-card fade-in-delayed">
+          <p>“I build, break, and rebuild until it’s fast, stable, and elegant.”</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section anim-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-underline"></div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I’m a <strong>Python expert</strong>, <strong>robotics enthusiast</strong>, and 
+            <strong>system architect</strong> with a passion for connecting code with physical machines. 
+            I enjoy building tools, robots, and systems that are not just functional, but reliable and efficient.
+          </p>
+          <p>
+            My background spans <strong>full-stack development</strong>, <strong>embedded systems</strong>, and 
+            <strong>PC hardware</strong>. I’m comfortable moving between high-level design and low-level debugging,
+            whether that’s optimizing a Python backend, wiring sensors to a microcontroller, or assembling and tuning PCs.
+          </p>
+          <p>
+            Right now, I’m focused on sharpening my backend and robotics skills, and building portfolio projects 
+            that demonstrate real-world problem solving.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="about-card">
+            <h3>What I Love Doing</h3>
+            <ul>
+              <li>Designing and programming robots</li>
+              <li>Building full-stack tools & dashboards</li>
+              <li>Optimizing and repairing PCs</li>
+              <li>Experimenting with Linux & custom systems</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Currently Exploring</h3>
+            <ul>
+              <li>FastAPI & modern web backends</li>
+              <li>React for rich frontends</li>
+              <li>Computer vision for robotics</li>
+              <li>System design & scalability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section alt anim-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-underline"></div>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <ul>
+            <li><span>Python</span><span class="badge badge-strong">Expert</span></li>
+            <li><span>C++</span><span class="badge">Intermediate</span></li>
+            <li><span>HTML / CSS / JavaScript</span><span class="badge">Intermediate</span></li>
+            <li><span>SQL</span><span class="badge">Intermediate</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Robotics & Embedded</h3>
+          <ul>
+            <li>Arduino / ESP32 / Raspberry Pi</li>
+            <li>Sensors, actuators & motor control</li>
+            <li>Basic control systems & automation</li>
+            <li>Hardware–software integration</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Systems & Hardware</h3>
+          <ul>
+            <li>PC assembly & troubleshooting</li>
+            <li>OS installation & optimization</li>
+            <li>Linux for development</li>
+            <li>Basic networking & configuration</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools & Workflow</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code & JetBrains tools</li>
+            <li>SQL clients & DB tools</li>
+            <li>Task automation with Python scripts</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section anim-section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-underline"></div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-label">Robotics</div>
+          <h3>Autonomous Vision-Based Robot</h3>
+          <p>
+            A robot capable of basic object tracking and obstacle avoidance using Python and 
+            microcontrollers. Integrates sensors, motor drivers, and a camera module for 
+            semi-autonomous navigation.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>Robotics</li>
+            <li>Microcontrollers</li>
+            <li>Sensors</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-label">Full-Stack</div>
+          <h3>Proton Classes — Academic Management System</h3>
+          <p>
+            A concept web application for coaching centers where students, teachers, staff, 
+            and admins each have separate portals. Includes class videos, notes, announcements, 
+            leave application, and academic tracking.
+          </p>
+          <ul class="project-tags">
+            <li>HTML / CSS / JS</li>
+            <li>Python (Backend)</li>
+            <li>SQLite</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-label">Systems</div>
+          <h3>Custom Linux Setup (macOS-Inspired)</h3>
+          <p>
+            A customized Linux environment styled to resemble macOS, optimized for development
+            on low-RAM hardware. Includes themed file manager, dock-like launcher, and tailored
+            workflow for programming and robotics.
+          </p>
+          <ul class="project-tags">
+            <li>Linux</li>
+            <li>System Customization</li>
+            <li>UI/UX</li>
+          </ul>
+        </article>
+
+        <article class="project-card project-card-muted">
+          <h3>Your Next Project</h3>
+          <p>
+            I’m currently working on new robotics and backend projects. Check back soon, 
+            or reach out if you’d like to collaborate on something interesting.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section alt anim-section">
+    <div class="container">
+      <h2 class="section-title">Experience & Contributions</h2>
+      <div class="section-underline"></div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>PC Mechanic & System Builder</h3>
+            <p class="timeline-meta">Freelance • Ongoing</p>
+            <p>
+              Built and repaired multiple custom PCs, diagnosed hardware failures, optimized OS 
+              setups, and helped users choose the right components for performance and budget.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Robotics & Automation Projects</h3>
+            <p class="timeline-meta">Personal & Academic</p>
+            <p>
+              Worked on robotics projects involving microcontrollers, sensors, and basic 
+              autonomous behavior. Focused on reliable control logic and clear documentation.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Software & Web Experiments</h3>
+            <p class="timeline-meta">Self-Driven Learning</p>
+            <p>
+              Built small tools, automation scripts, and web interfaces using Python, SQL, and 
+              JavaScript to solve practical problems and test new concepts.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section anim-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-underline"></div>
+
+      <div class="contact-grid">
+        <div>
+          <p>
+            Interested in collaborating, hiring, or just discussing an idea about robotics, 
+            systems, or development? I’d be happy to connect.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:shibinjacob.official@example.com">shibnjacob.official@example.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://www.github.com/shibin-jacob" rel="">Shibin-Jacob</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/__lucifer_ms__">@__lucifer_ms__</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary full-width" id="sendBtn">
+            <span class="btn-label">Send Message</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-note" id="formNote">
+            Your message will be sent to my backend and stored securely.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shibin. All rights reserved.</p>
+      <p class="footer-tagline">Built with Python-powered discipline and hardware-level precision.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
