@@ -48,6 +48,9 @@ def contact():
     return jsonify({"success": True, "message": "Message received. I’ll get back to you soon."})
 
 
-if __name__ == "__main__":
-    # Debug=True for development, remove/change in production
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     # Debug=True for development, remove/change in production
+#     app.run(debug=True)
+# For Vercel Serverless compatibility
+def handler(event, context):
+    return app(event, context)
